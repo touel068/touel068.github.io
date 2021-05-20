@@ -1,0 +1,112 @@
+<html>
+
+<head>
+    <title>Siege.gg Survey</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+</head>
+
+<body>
+
+    <div class="header">
+        <img class="siegeGGlogo" src="./images/logo_white.png" />
+        <div class="title">
+            <h1 class="h-title">SiegeGG Website Survey</h1>
+        </div>
+
+    </div>
+    <div class="content">
+        <form class="formclass">
+            <div class="card">
+                <a href="https://siege.gg/" style=" text-decoration: none;">
+                    <h2 class="h2-title">SiegeGG website</h2>
+                    <img src="./images/page.png" class="image" />
+                </a>
+            </div>
+
+
+            <div class="card" style="margin-top: 30px">
+                <p class="qtext">
+                    Question 1: Have you used this website before?
+                    <br>
+                    <input type="radio" name="q1" value="yes">Yes
+                    <input type="radio" name="q1" value="no">No
+                </p>
+            </div>
+
+            <div class="card" style="margin-top: 30px">
+                <p class="qtext">
+                    Question 2: Which section of the website have you used before?
+                    <br>
+                    <input type="checkbox" id="news" name="news" value="news">
+                    <label for="news"> News</label><br>
+                    <input type="checkbox" id="competitions" name="competitions" value="competitions">
+                    <label for="competitions"> Competitions </label><br>
+                    <input type="checkbox" id="matches" name="matches" value="matches">
+                    <label for="matches"> Matches</label><br>
+                    <input type="checkbox" id="results" name="results" value="results">
+                    <label for="results">Results</label><br>
+                    <input type="checkbox" id="stats" name="stats" value="stats">
+                    <label for="stats">Stats</label><br>
+                </p>
+
+            </div>
+
+            <div class="card" style="margin-top: 30px">
+                <p class="qtext">
+                    Question 3: Have you noticed any functionalities that are not working as intented on the website?
+                    <br>
+                    <input type="radio" name="q2" value="yes">Yes
+                    <input type="radio" name="q2" value="no">No
+                </p>
+            </div>
+
+            <div class="card" style="margin-top: 30px">
+                <p class="qtext">Question 4: If you answered yes to the previous question, please explain the issues</p>
+                <input style="margin-left: 10px;" type="text" />
+            </div>
+            <div class="card" style="margin-top: 30px">
+                <p class="qtext">
+                    Question 5: How did you find your experience of navigating the website
+                    <select id="experience" name="experience">
+                        <option value="volvo">Very Positive</option>
+                        <option value="saab">Positive</option>
+                        <option value="fiat">Neutral</option>
+                        <option value="audi">Negative</option>
+                        <option value="audi">Very Negative</option>
+                    </select>
+                </p>
+            </div>
+
+            <div class="card" style="margin-top: 30px">
+                <p class="qtext">Question 6: What would you want to be changed about the layout of the
+                    website?</p>
+                <input style="margin-left: 10px;" type="text" />
+            </div>
+
+
+
+
+
+            <div class="card" style="margin-top: 30px">
+                <p class="qtext">If you have any other comments about the website, please mention them here</p>
+                <textarea name="comments" id="comments" cols="50" rows="5">
+                    </textarea>
+            </div>
+
+            <input style="margin-top: 30px" type="submit" value="Submit">
+        </form>
+
+
+    </div>
+
+</body>
+
+<footer>
+    <div class="footerdiv">
+        <p class="f-text">
+            Website made by Thomas Ouellette
+        </p>
+    </div>
+</footer>
+
+</html>
