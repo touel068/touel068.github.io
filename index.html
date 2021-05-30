@@ -1,112 +1,69 @@
+<!DOCTYPE html>
 <html>
-
 <head>
-    <title>Siege.gg Survey</title>
-    <link rel="stylesheet" href="./styles/style.css" />
+	<! This style sheet is taken from  https://www.w3schools.com/howto/howto_js_tabs.asp>
+	<link href="styles/style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-
-    <div class="header">
-        <img class="siegeGGlogo" src="./images/logo_white.png" />
-        <div class="title">
-            <h1 class="h-title">SiegeGG Website Survey</h1>
-        </div>
-
-    </div>
-    <div class="content">
-        <form class="formclass">
-            <div class="card">
-                <a href="https://siege.gg/" style=" text-decoration: none;">
-                    <h2 class="h2-title">SiegeGG website</h2>
-                    <img src="./images/page.png" class="image" />
-                </a>
-            </div>
+<div class="title">
+    <h1>Vice Groceries</h1>
+</div>
 
 
-            <div class="card" style="margin-top: 30px">
-                <p class="qtext">
-                    Question 1: Have you ever used this website before?
-                    <br>
-                    <input type="radio" name="q1" value="yes">Yes
-                    <input type="radio" name="q1" value="no">No
-                </p>
-            </div>
+<!-- Tab links, each one with an onclick event associated with it -->
+<div class="tab">
+  <button class="tablinks" onclick="openInfo(event, 'Client')">Client</button>
+  <button class="tablinks" onclick="openInfo(event, 'Products')">Products</button>
+  <button class="tablinks" onclick="openInfo(event, 'Cart')">Cart</button>
+</div>
 
-            <div class="card" style="margin-top: 30px">
-                <p class="qtext">
-                    Question 2: If yes, which section of the website have you used before?
-                    <br>
-                    <input type="checkbox" id="news" name="news" value="news">
-                    <label for="news"> News</label><br>
-                    <input type="checkbox" id="competitions" name="competitions" value="competitions">
-                    <label for="competitions"> Competitions </label><br>
-                    <input type="checkbox" id="matches" name="matches" value="matches">
-                    <label for="matches"> Matches</label><br>
-                    <input type="checkbox" id="results" name="results" value="results">
-                    <label for="results">Results</label><br>
-                    <input type="checkbox" id="stats" name="stats" value="stats">
-                    <label for="stats">Stats</label><br>
-                </p>
+<!-- Tab content -->
+<div id="Client" class="tabcontent">
+  <h3>Client Information</h3>
+  <p>Tell us a bit about you.</p>
+	Do you have any intollerences?
+	<select id="dietSelect" name="dietSelect" onchange="populateListProductChoices('displayProduct')">
+	<option  value=""></option>
+    <option value="NutsFree">NutsFree</option>
+    <option value="LactoseFree">LactoseFree</option>
+    <option selected="selected" value="None">None</option>
+  </select>
+  <br>
+  Do you prefer Organic food?
+  <select id="organicSelect" name="organicSelect" onchange="populateListProductChoices('displayProduct')">
+    <option  value=""></option>
+      <option value="Organic">Organic</option>
+      <option selected="selected" value="NoneO">No preference</option>
+    </select>
+    <br>
+    <button onclick="populateListProductChoices('displayProduct')">Confirm</button>
 
-            </div>
+    
+  
+</div>
 
-            <div class="card" style="margin-top: 30px">
-                <p class="qtext">
-                    Question 3: Have you noticed any functionalities that are not working as intented on the website?
-                    <br>
-                    <input type="radio" name="q2" value="yes">Yes
-                    <input type="radio" name="q2" value="no">No
-                </p>
-            </div>
+<div id="Products" class="tabcontent">
+  <h3>Your targeted products</h3>
+  <p>We preselected products based on your restrictions.</p>
+	 Choose items to buy:
+	 <div id="displayProduct"></div>
+	 <button id="addCart" type="button" class="block" onclick="selectedItems()">
+		Add selected items to cart.
+	</button>
+</div>
 
-            <div class="card" style="margin-top: 30px">
-                <p class="qtext">Question 4: If you answered yes to the previous question, please explain the issues</p>
-                <input style="margin-left: 10px;" type="text" />
-            </div>
-            <div class="card" style="margin-top: 30px">
-                <p class="qtext">
-                    Question 5: How did you find your experience of navigating the website
-                    <select id="experience" name="experience">
-                        <option value="volvo">Very Positive</option>
-                        <option value="saab">Positive</option>
-                        <option value="fiat">Neutral</option>
-                        <option value="audi">Negative</option>
-                        <option value="audi">Very Negative</option>
-                    </select>
-                </p>
-            </div>
+<div id="Cart" class="tabcontent">
+  <h3>Cart</h3>
+  <p>Here is your cart.</p>
+  <div id="displayCart"></div>
+</div>
 
-            <div class="card" style="margin-top: 30px">
-                <p class="qtext">Question 6: What would you want to be changed about the layout of the
-                    website?</p>
-                <input style="margin-left: 10px;" type="text" />
-            </div>
-
-
-
-
-
-            <div class="card" style="margin-top: 30px">
-                <p class="qtext">If you have any other comments about the website, please mention them here</p>
-                <textarea name="comments" id="comments" cols="50" rows="5">
-                    </textarea>
-            </div>
-
-            <input style="margin-top: 30px" type="submit" value="Submit">
-        </form>
-
-
-    </div>
+<script src="scripts/groceries.js"></script>
+<script src="scripts/main.js"></script>
 
 </body>
-
 <footer>
-    <div class="footerdiv">
-        <p class="f-text">
-            Website made by Thomas Ouellette
-        </p>
-    </div>
+  Website by Thomas Ouellette
 </footer>
-
 </html>
