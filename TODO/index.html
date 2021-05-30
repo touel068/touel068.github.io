@@ -22,13 +22,24 @@
 <div id="Client" class="tabcontent">
   <h3>Client Information</h3>
   <p>Tell us a bit about you.</p>
-	Choose a Category:
-	<select id="dietSelect" name="dietSelect" onchange="populateListProductChoices(this.id, 'displayProduct')">
-	<option value=""></option>
+	Do you have any intollerences?
+	<select id="dietSelect" name="dietSelect" onchange="populateListProductChoices('displayProduct')">
+	<option  value=""></option>
     <option value="NutsFree">NutsFree</option>
     <option value="LactoseFree">LactoseFree</option>
-    <option value="None">None</option>
-	</select>
+    <option selected="selected" value="None">None</option>
+  </select>
+  <br>
+  Do you prefer Organic food?
+  <select id="organicSelect" name="organicSelect" onchange="populateListProductChoices('displayProduct')">
+    <option  value=""></option>
+      <option value="Organic">Organic</option>
+      <option selected="selected" value="NoneO">No preference</option>
+    </select>
+    <br>
+
+    
+  
 </div>
 
 <div id="Products" class="tabcontent">
@@ -51,4 +62,7 @@
 <script src="scripts/main.js"></script>
 
 </body>
+<footer>
+  Website by Thomas Ouellette
+</footer>
 </html>
