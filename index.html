@@ -1,12 +1,95 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<link href="styles/style.css" rel="stylesheet" type="text/css">
+  <link href="styles/style.css" rel="stylesheet" type="text/css">
 </head>
 
-<body>
-</body>
-<footer>
-  Website by Thomas Ouellette
-</footer>
+<body onload="populateProducts('displayProduct')"">
+  <header>
+    <div class="title">
+      <img class="logo" alt="logo" src="media/icon.png">
+      <h1>Viceto Groceries</h1>
+    </div>
+    <div class="button1">
+      <button id="settingBtn" class="setting">
+        <img class="settingLogo" src="media/setting.png">
+      </button>
+    </div>
+  </header>
+
+  <div id="myModal" class="modal">
+    <div class="productselect">
+
+      <h1>Apply Restrictions</h1>
+      <br>
+      <h3>Do you have any food intollerences?</h3>
+      <label class="container">
+        <input type="checkbox" id="lactose" name="lactose">Lactose
+        <span class="checkmark"></span>
+      </label>
+      <br>
+      <label class="container">
+        <input type="checkbox" id="nuts" name="nuts">Nuts
+        <span class="checkmark"></span>
+      </label>
+      <br>
+      <h3>Would you like to show only organic products</h3>
+      <label class="switch">
+        <input type="checkbox" id="organic" name="organic">
+        <span class="slider"></span>
+      </label>
+      <br>
+      <br>
+      <button style="background-color: rgb(180, 219, 180)" id="confirmBtn">Confirm</button>
+    </div>
+  </div>
+
+
+  <div id="Products" class="tabcontent">
+    <h2>Here are our availaible products based on your Restrictions!</h2>
+    <div class="dp" id="displayProduct"></div>
+    <button class="addBtn" id="addCart" type="button" class="block" onclick="selectedItems()">
+      Add selected items to cart.
+    </button>
+  </div>
+
+
+  <div id="Cart" class="cart">
+
+    <div id="displayCart"></div>
+  </div>
+
+  <script src="scripts/groceries.js"></script>
+  <script src="scripts/main.js"></script>
+
+  <script>
+    var modal = document.getElementById("myModal");
+    var btn = document.getElementById("settingBtn");
+    var cls = document.getElementById("confirmBtn");
+
+    btn.onclick = function () {
+     
+      modal.style.display = "block";
+    }
+    cls.onclick = function () {
+      populateProducts('displayProduct')
+      modal.style.display = "none";
+    }
+
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+ 
+
+
+
+
+  <footer>
+    Website by Thomas Ouellette
+  </footer>
+
 </html>
