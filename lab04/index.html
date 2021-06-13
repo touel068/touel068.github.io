@@ -1,32 +1,254 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <link href="styles/styles.css" rel="stylesheet" type="text/css">
-    <title>veterinarian clinic</title>
-  </head>
-  <body>
-    <nav class="navbar navbar-dark bg-dark">
-      <span class="navbar-brand mb-0 h1">
-        <img src="assets/logo2.png" width="30" height="30" alt="">
-        Vice Veterinarian
-      </span>
-      <span style="margin-right: 5px;" class="navbar-text ">
-        292 McGill street, Montreal
-      </span>
-    </nav>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="styles/style.css" rel="stylesheet" type="text/css">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
-    <div class="headerImg">
+  <title>veterinarian clinic</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-dark bg-dark">
+    <span class="navbar-brand mb-0 h1">
+      <img src="assets/logo2.png" width="30" height="30" alt="">
+      Vice Veterinarian
+    </span>
+    <span style="margin-right: 5px;" class="navbar-text ">
+      292 McGill street, Montreal
+    </span>
+  </nav>
+
+  <div class="headerImg">
+  </div>
+
+  <div class="services d-flex justify-content-center ">
+    <h1 style="margin-top: 30px; margin-bottom: 30px;">Here are our availaible services </h1>
+  </div>
+
+  <div class="lists d-flex justify-content-center">
+    <div class="card" style="width: 18rem;">
+      <img src="assets/vaccine2.png" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">Vaccines</h5>
+        <p class="card-text">
+          All core vaccines are availaible for the cost of 25$ each.
+        </p>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+      <img src="assets/grooming.png" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">Grooming</h5>
+        <p class="card-text">
+          dogs under 20kg: 40$
+          <br>
+          dogs from 20-40kg: 55$
+          <br>
+          dogs over 40kg: 65$
+        </p>
+      </div>
     </div>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <div class="card" style="width: 18rem;">
+      <img src="assets/dental.png" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">Dental Care</h5>
+        <p class="card-text">
+          Normal cleanings cost 150$
+        </p>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+      <img src="assets/neutering.png" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">Neutering</h5>
+        <p class="card-text">
+          dogs under 20kg: 120$
+          <br>
+          dogs from 20-40kg: 150$
+          <br>
+          dogs over 40kg: 190$
+          <br>
+          costs are the same for both male and female dogs
+        </p>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+      <img src="assets/microchip.png" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">Microchip</h5>
+        <p class="card-text">availaible for 25$.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="appointment d-flex justify-content-center">
+    <div class="accordion" id="accordionPanelsStayOpenExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+            aria-controls="panelsStayOpen-collapseOne">
+            <h1>Please fill this form to schedule an appointment</h1>
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+          aria-labelledby="panelsStayOpen-headingOne">
+          <div class="accordion-body">
+            <div class="form1">
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Select a service</label>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Open this select menu</option>
+                  <option value="1">Vaccines</option>
+                  <option value="2">Grooming</option>
+                  <option value="3">Dental Care</option>
+                  <option value="4">Neutering</option>
+                  <option value="5">Microchip</option>
+                </select>
+              </div>
+
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Select an appointment date</label>
+                <br>
+                <input type="datetime-local" id="datetime-local">
+              </div>
+              <br>
+              <h3>Enter your contact information</h3>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">First name</label>
+                <br>
+                <input class="form-control" id="firstname" placeholder="firstname">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Last name</label>
+                <br>
+                <input class="form-control" id="lastname" placeholder="lastname">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="name@example.com">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Phone</label>
+                <input type="tel" class="form-control" id="phone" placeholder="phone">
+              </div>
+              <br>
+              <h5>Address</h5>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Street</label>
+                <input class="form-control" id="street" placeholder="street">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">City</label>
+                <input class="form-control" id="city" placeholder="city">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Province</label>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Open this select menu</option>
+                  <option value="Quebec">Quebec</option>
+                  <option value="Alberta">Alberta</option>
+                  <option value="British">British columbia</option>
+                  <option value="Manitoba">Manitoba</option>
+                  <option value="Brunswick">New Brunswick</option>
+                  <option value="Newfoundland">Newfoundland & Labrador </option>
+                  <option value="Scotia">Nova Scotia</option>
+                  <option value="Ontario">Ontario</option>
+                  <option value="Prince">Prince Edward Island</option>
+                  <option value="Saskatchewan">Saskatchewan</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Country</label>
+                <input class="form-control" id="country" placeholder="country">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Zip Code</label>
+                <input class="form-control" id="zip" placeholder="zip">
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="fakefooter">
+    <div class="services d-flex justify-content-center ">
+      <h1 style="margin-top: 30px; margin-bottom: 30px; color: white;">Our Experts </h1>
+    </div>
+    <div class=" d-flex justify-content-center">
+      <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="assets/Nigel.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Nigel Brooks</h5>
+              <p>Doctorate in Veterinary medicine from McGill University</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="assets/Cassandra.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Cassandra Winter</h5>
+              <p>Doctorate in Veterinary medicine from uOttawa University</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/Jeff.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Jeff Kepler</h5>
+              <p>Doctorate in Veterinary medicine from Sherbrooke University</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
 
 
-  </body>
+  </div>
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+
+
+</body>
+<footer>
+  Website by Thomas Ouellette
+</footer>
+
+
 </html>

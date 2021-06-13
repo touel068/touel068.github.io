@@ -26,8 +26,42 @@ footer{
 }
 
 .headerImg {
-  width: 100%;
+  width: 100%;  
   height: 400px;
-  background: url('./assets/header1.jpg');
+
+  background: url('../assets/header3.jpg');
   background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.services{
+  margin-left: 50px;
+
+}
+
+.lists{
+ 
+}
+
+.card{
+  margin-right: 20px;
+}
+
+.form1{
+    padding: 1.5rem;
+    margin-right: 0;
+    margin-left: 0;
+    border-width: 1px;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+
+}
+.appointment{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.fakefooter{
+  background-color: #343a40;
+
 }
