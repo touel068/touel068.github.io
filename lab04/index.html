@@ -105,81 +105,83 @@
         <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
           aria-labelledby="panelsStayOpen-headingOne">
           <div class="accordion-body">
-            <div class="form1">
-              <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Select a service</label>
-                <select class="form-select" aria-label="Default select example">
-                  <option selected>Open this select menu</option>
-                  <option value="1">Vaccines</option>
-                  <option value="2">Grooming</option>
-                  <option value="3">Dental Care</option>
-                  <option value="4">Neutering</option>
-                  <option value="5">Microchip</option>
-                </select>
-              </div>
+            <form>
+              <div class="form1">
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label">Select a service</label>
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>Open this select menu</option>
+                    <option value="1">Vaccines</option>
+                    <option value="2">Grooming</option>
+                    <option value="3">Dental Care</option>
+                    <option value="4">Neutering</option>
+                    <option value="5">Microchip</option>
+                  </select>
+                </div>
 
-              <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Select an appointment date</label>
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label">Select an appointment date</label>
+                  <br>
+                  <input type="datetime-local" id="datetime-local">
+                </div>
                 <br>
-                <input type="datetime-local" id="datetime-local">
-              </div>
-              <br>
-              <h3>Enter your contact information</h3>
-              <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">First name</label>
+                <h3>Enter your contact information</h3>
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label">First name</label>
+                  <br>
+                  <input class="form-control" id="firstname" placeholder="firstname">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label">Last name</label>
+                  <br>
+                  <input class="form-control" id="lastname" placeholder="lastname">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label">Phone</label>
+                  <input type="tel" class="form-control" id="phone" placeholder="phone">
+                </div>
                 <br>
-                <input class="form-control" id="firstname" placeholder="firstname">
-              </div>
-              <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Last name</label>
-                <br>
-                <input class="form-control" id="lastname" placeholder="lastname">
-              </div>
-              <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" placeholder="name@example.com">
-              </div>
-              <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Phone</label>
-                <input type="tel" class="form-control" id="phone" placeholder="phone">
-              </div>
-              <br>
-              <h5>Address</h5>
-              <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Street</label>
-                <input class="form-control" id="street" placeholder="street">
-              </div>
-              <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">City</label>
-                <input class="form-control" id="city" placeholder="city">
-              </div>
-              <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Province</label>
-                <select class="form-select" aria-label="Default select example">
-                  <option selected>Open this select menu</option>
-                  <option value="Quebec">Quebec</option>
-                  <option value="Alberta">Alberta</option>
-                  <option value="British">British columbia</option>
-                  <option value="Manitoba">Manitoba</option>
-                  <option value="Brunswick">New Brunswick</option>
-                  <option value="Newfoundland">Newfoundland & Labrador </option>
-                  <option value="Scotia">Nova Scotia</option>
-                  <option value="Ontario">Ontario</option>
-                  <option value="Prince">Prince Edward Island</option>
-                  <option value="Saskatchewan">Saskatchewan</option>
-                </select>
-              </div>
-              <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Country</label>
-                <input class="form-control" id="country" placeholder="country">
-              </div>
-              <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Zip Code</label>
-                <input class="form-control" id="zip" placeholder="zip">
-              </div>
+                <h5>Address</h5>
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label">Street</label>
+                  <input class="form-control" id="street" placeholder="street">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label">City</label>
+                  <input class="form-control" id="city" placeholder="city">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label">Province</label>
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>Open this select menu</option>
+                    <option value="Quebec">Quebec</option>
+                    <option value="Alberta">Alberta</option>
+                    <option value="British">British columbia</option>
+                    <option value="Manitoba">Manitoba</option>
+                    <option value="Brunswick">New Brunswick</option>
+                    <option value="Newfoundland">Newfoundland & Labrador </option>
+                    <option value="Scotia">Nova Scotia</option>
+                    <option value="Ontario">Ontario</option>
+                    <option value="Prince">Prince Edward Island</option>
+                    <option value="Saskatchewan">Saskatchewan</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label">Country</label>
+                  <input class="form-control" id="country" placeholder="country">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label">Zip Code</label>
+                  <input class="form-control" id="zip" placeholder="zip">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
 
-            </div>
-
+              </div>
+            </form>
           </div>
         </div>
 
@@ -194,9 +196,12 @@
     <div class=" d-flex justify-content-center">
       <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="10000">
@@ -243,6 +248,15 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
     crossorigin="anonymous"></script>
+
+  <script>
+    $('#form').submit(function (e) {
+      $('#messages').removeClass('hide').addClass('alert alert-success alert-dismissible').slideDown().show();
+      $('#messages_content').html('<h4>MESSAGE HERE</h4>');
+      $('#modal').modal('show');
+      e.preventDefault();
+    });
+  </script>
 
 
 </body>
