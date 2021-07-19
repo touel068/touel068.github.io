@@ -1,0 +1,130 @@
+.home{
+  background-image: url('background.jpg');
+  height: 100%;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+
+}
+
+.thepark{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 60vh;
+
+}
+
+.theparktitle{
+  color:white;
+  padding: 1vh;
+  font-family: 'Archivo Black',sans-serif;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 1;
+  text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0.527);
+ 
+}
+
+.theparkdescription{
+  color:white;
+  padding:3vh;
+  margin-top: 2vh;
+  margin-left: 30%;
+  margin-right: 30%;
+  font-family: 'Biryani',sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+  letter-spacing: normal;
+  line-height: 1;
+  background-color: rgba(0, 0, 0, 0.527);
+}
+
+.breadcrumbs{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.cardContainer
+{
+  padding: 30px;
+
+}
+
+.allCards{
+  display: flex;
+}
+
+.video{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.continentTitle{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Archivo Black',sans-serif;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 1;
+  padding:2vh;
+  text-transform: uppercase;
+}
+
+.tickets{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Biryani',sans-serif;
+  min-height: 30vh;
+}
+
+.allRows{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.activityCards{
+  padding: 20px;
+
+}
+
+.help{
+  color: green;
+}
+
+.reviewBtn{
+  font-family: 'Archivo Black',sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  letter-spacing: normal;
+  line-height: 1;
+  height:50px;
+  color: white;
+  background-color: rgba(226, 107, 107, 0.863);
+}
+.review{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}

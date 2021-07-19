@@ -1,0 +1,9 @@
+export { default as Navigation } from "./Navigation";
+export { default as Footer } from "./Footer";
+export { default as Home } from "./Home";
+export { default as HomeFrench } from "./HomeFrench";
+export { default as Dinosaurs } from "./Dinosaurs";
+export { default as DinosaursAfrica } from "./DinosaursAfrica";
+export { default as DinosaursNorthAmerica } from "./DinosaursNorthAmerica";
+export { default as Activities } from "./Activities";
+export { default as Tickets } from "./Tickets";
